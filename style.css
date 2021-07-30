@@ -1,0 +1,184 @@
+nav {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.contact {
+width: 126px;
+height: 40px;
+background: #00E650;
+margin-top: -40px;
+border-color: transparent;
+border-radius: 5px;
+font-family: 'Libre Franklin', sans-serif;
+font-size: 14px;
+transition: all .2s ease-in-out; 
+
+}
+
+.contact:hover {
+    transform: scale(1.1); 
+}
+
+.nav-item {
+    padding: 40px 20px 20px 20px;
+    float: right;
+    text-decoration:none;
+    color:black;
+}
+
+.nav-item:after 
+{
+content: '';
+display: block;
+height: 3px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
+-webkit-transition: width .5s ease, background-color .5s ease; /* Chrome and Safari */
+-moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
+}
+
+.nav-item:hover:after 
+{
+width: 100%;
+background: #00E650;
+}
+
+.logo {
+    display:inline-block;
+    margin-top: 20px;
+}
+
+#heroImg {
+  margin-left: 20px;
+}
+
+body{
+    margin: 0px 100px 0px 100px;
+    font-family: 'Libre Franklin', sans-serif;
+}   
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 55px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 35px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-top: 50px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  min-height: 300px;
+}
+
+.whyColumn {
+  float: left;
+  width: 45%;
+  padding-left: 100px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  min-height: 300px;
+  margin-right: 45px;
+  background-color: black;
+}
+
+
+#square {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  position: relative;
+  margin-left: -150px;
+
+}
+
+#square:hover {
+  background-color: #00E650;
+  cursor: crosshair;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+#cube {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  position: absolute;
+  margin-left: -30px;
+
+
+}
+
+#cube:hover {
+  background-color: #00E650;
+  cursor: crosshair;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+  
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.why {
+    color: white;
+    font-size: 48px;
+    padding-left: 30px;
+    margin-top: -80px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+  .whyColumn{
+    width: 100%;
+    padding-left: 40px;
+  }
+
+.nav-item {
+  display: none;
+}
+
+  #square {
+    width: 90px;
+    height: 90px;
+    background: blue;
+    position: relative;
+    margin-left: -80px;
+}
+}
